@@ -1,0 +1,37 @@
+.main-row-block
+  display: flex
+  justify-content: center
+  width: 100%
+  padding: 0rem 2rem 0rem 2rem
+  box-sizing: border-box
+  @include respond(tablet-portrait)
+    flex-direction: column
+  @include respond(tablet-landscape)
+    padding: 0rem 4rem 0rem 4rem
+  @include respond(mobile)
+    width: 95%
+    margin: 0 auto
+    flex-direction: column
+
+.block-description-column
+  display: flex
+  flex-direction: column
+  margin-right: 6rem
+  @include respond(tablet-portrait)
+    width: 80%
+    margin: 0rem auto 6rem auto
+  @include respond(mobile)
+    margin: 0rem 0rem 15% 0rem
+.description
+  display: flex
+  flex-direction: column
+  max-width: 54rem
+  @include respond(tablet-portrait)
+    max-width: 100%
+  @include respond(mobile)
+    max-width: 100%
+  &__title
+    margin-bottom: 1rem
+    text-align: left
+  &__text
+    text-align: left

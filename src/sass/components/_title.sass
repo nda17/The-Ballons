@@ -1,0 +1,111 @@
+//Общий заголовок h1:
+.main-title
+  max-width: 80%
+  display: flex
+  flex-direction: column
+  text-align: center
+  color: $color-white
+  @include respond(mobile)
+    max-width: 100%
+  &__top-text
+    font-weight: 800
+    font-size: 5rem
+    line-height: 6rem
+    letter-spacing: 1rem
+    text-transform: uppercase
+    margin-bottom: 1rem
+    @include respond(tablet-portrait)
+      width: 100%
+      font-size: 3.6rem
+      letter-spacing: .5rem
+      margin-bottom: 0
+    @include respond(mobile)
+      font-size: 2.6rem
+      letter-spacing: .5rem
+    //Анимация:
+    animation-name: leftToRight
+    animation-duration: 1.6s //Продолжительность анимации
+    animation-delay: 1s //Задержка старта анимации
+    animation-timing-function: ease //Эффект ускорения анимации
+    backface-visibility: hidden //Стабилизация анимации
+  &__bottom-text
+    font-weight: 100
+    font-size: 3rem
+    line-height: 4.8rem
+    letter-spacing: .5rem
+    margin-bottom: 5rem
+    @include respond(tablet-portrait)
+      font-size: 3.2rem
+      letter-spacing: .2rem
+      margin-bottom: 3.5rem
+    @include respond(tablet-landscape)
+      margin-bottom: 3rem
+    @include respond(mobile)
+      font-size: 3.2rem
+      letter-spacing: .2rem
+    //Анимация:
+    animation-name: rightToLeft
+    animation-duration: 1.6s //Продолжительность анимации
+    animation-delay: 1s //Задержка старта анимации
+    animation-timing-function: ease //Эффект ускорения анимации
+    backface-visibility: hidden //Стабилизация анимации
+//---------------------------------------------------
+
+//Общий заголовок блоков:
+.title-secondary-container
+  max-width: 90%
+  margin: 0 auto 8rem auto
+  @include respond(mobile)
+    margin: 0 auto 5rem auto
+.secondary
+  margin: 0 auto
+
+.title-secondary
+  background: linear-gradient(90deg, rgba($color-light-brown, 0.7) 0.03%, rgba($color-dark-brown, 0.7) 99.94%)
+  -webkit-background-clip: text //фон только для текста
+  color: transparent //прозрачность
+  transition: all .4s //плавность анимации
+  backface-visibility: hidden //стабилизация
+  font-size: 3.6rem
+  font-weight: 800
+  line-height: 4.3rem
+  letter-spacing: 1rem
+  color: $color-light-brown
+  text-align: center
+  text-transform: uppercase
+  @include respond(tablet-portrait)
+    font-size: 3rem
+    letter-spacing: .6rem
+  @include respond(mobile)
+    font-size: 1.6rem
+    letter-spacing: .6rem
+  &:hover
+    transform: skewY(2deg) skewX(15deg) scale(1.1)
+    text-shadow: 0rem .8rem .8rem rgba($color-black, .40) //тень
+
+//Модификатор с белым цветом заголовка:
+.title-secondary_white
+  color: $color-white
+
+.title
+  font-weight: 700
+  font-size: 2rem
+  line-height: 2.4rem
+  letter-spacing: .2rem
+  text-transform: uppercase
+  @include respond(tablet-portrait)
+    font-size: 1.8rem
+  @include respond(mobile)
+    font-size: 1.8rem
+
+.text
+  font-weight: 400
+  font-size: 1.6rem
+  line-height: 140%
+  letter-spacing: .2rem
+  @include respond(tablet-portrait)
+    font-size: 2rem
+  @include respond(tablet-landscape)
+    font-size: 1.2rem
+  @include respond(mobile)
+    font-size: 1.5rem
