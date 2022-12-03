@@ -1,5 +1,5 @@
 # «Адаптивная и мобильная верстка» 
-## Ballons_Landing-page [ссылка на страницу](https://nfdmitry.github.io/Ballons_Landing-page/)
+## Ballons_Landing-page [ссылка на страницу](https://nfdmitry.github.io/The-Ballons/)
 
 - Верстка реализовано с помощью резиновой и адаптивной верстки.
 - Верстка реализована c использованием препроцессора Sass и методологии БЭМ.
