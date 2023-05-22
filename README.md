@@ -1,5 +1,5 @@
-# «The Ballons_Landing-page»
+# «The Ballons Landing-page»
 
 Adaptive and mobile layout
 
-## [Demoу](https://nfdmitry.github.io/The-Ballons/)
+## [Demo](https://nfdmitry.github.io/The-Ballons/)
